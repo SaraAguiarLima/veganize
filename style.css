@@ -16,3 +16,27 @@
     --cor04: ;
     --cor05: ;
 }
+section.imagem{
+   
+    background-color: rgb(26, 25, 25);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.459);
+    background-size: cover;/*qndo a img fica grande demais usa-se esse background */
+    background-attachment: fixed;/*efeito parallax*/
+}
+section.imagem > p {
+    display: inline-block;
+    padding : 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.37);
+
+}
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+   background-position:right center;
+   
+}
+
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+}
