@@ -10,33 +10,75 @@
     --font02: ;
     --font03: ;
 
-    --cor01: ;
-    --cor02: ;
-    --cor03: ;
+    --cor01:rgba(84, 126, 84, 0.342);
+    --cor02:rgb(32, 78, 32);
+    --cor03:rgb(149, 218, 149);
     --cor04: ;
     --cor05: ;
 }
-section.imagem{
-   
-    background-color: rgb(26, 25, 25);
-    color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.459);
-    background-size: cover;/*qndo a img fica grande demais usa-se esse background */
-    background-attachment: fixed;/*efeito parallax*/
+html, body{
+    min-height: 100vh;
+    background-color:darkgray ;
 }
-section.imagem > p {
-    display: inline-block;
-    padding : 5px;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.37);
+header{
+    background-color: rgb(149, 218, 149);
+    text-align: center;
+    box-shadow:0px 3px 8px black;
+    
+ }   
+ header > h1 { 
+    padding-top: 15px;
+    margin-bottom: 15px 0px 15px 0px ;
+    color: aliceblue;
+    font-variant: small-caps;/*deixa todas as letras em cx alto*/
+    font-size: 7vw;/*letra adaptavel a viewport*/
+}
+header > h2 {
+    text-align: center;
+    padding:  5px 10px;
+    color: aliceblue;
+    font-variant: small-caps;/*deixa todas as letras em cx alto*/
+    font-size: 2vw;
+    padding-bottom: 15px;
+    
+}
+header img{
+    overflow-y: auto;
+    
+}
+nav {
+    background-color: var(--cor03);
+    padding: 15px 0px 15px 0px;
+    box-shadow:2px 3px 8px  rgba(49, 73, 49, 0.918);
+    font-size: 3vw;
+    } 
 
-}
-section#img01{
-    background-image: url(../img/background001.jpg);
-   background-position:right center;
-   
-}
+ nav > a{
+        text-decoration: none;
+        padding-left: 5px;
+        margin: 5px;
+        transition-duration: 0.5s;
+        color: white ;
+        border: 30px;
+        border-radius: 3px;
 
-section#img02{
-    background-image: url(../img/background002.jpg);
-}
+    }
+    nav > a:hover{
+    background-color:rgba(84, 126, 84, 0.342) ;
+    font-weight: bolder;
+    font-size: 1.2em;
+   
+    }
+    main{
+        background-color:  rgb(149, 218, 149);
+        padding-left: 10px;
+        padding-right: 10px;
+       
+    }
+    article{
+      padding:1vh;
+      text-indent: 15px;
+      font-size: 3vw;
+      
+    }
+   
